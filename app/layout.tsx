@@ -16,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.className} bg-[#0A0F1C]`}>{children}</body>
+      <body className={`${inter.className} bg-[#0A0F1C] min-h-screen`}>
+        <div className="container mx-auto flex min-h-screen max-w-3xl flex-col px-4 py-5 md:px-16">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
