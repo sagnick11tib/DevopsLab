@@ -40,7 +40,7 @@ export default function Home() {
     {
       name: "Containerization",
       icon: <Docker className="w-6 h-6" />,
-      description: "Docker container management",
+      description: "Docker container management and orchestration",
     },
     {
       name: "Version Control",
@@ -60,7 +60,7 @@ export default function Home() {
     {
       name: "Databases",
       icon: <Database className="w-6 h-6" />,
-      description: "Database administration",
+      description: "Database administration and management",
     },
   ];
 
@@ -238,7 +238,7 @@ docker run -p 3000:3000 devops-lab`}</code>
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            © 2024 DevOps Lab. Created for testing and learning purposes.
+            © 2025 DevOps Lab. Created for testing and learning purposes.
           </motion.p>
         </footer>
       </div>
