@@ -1,0 +1,44 @@
+@Library("Shared") _
+pipeline {
+    agent { label "worker"}
+    
+    stages {
+        stage('Hello'){
+            steps{
+                script{
+                    hello()
+                }
+            }
+        }
+        stage('Code'){
+            steps{
+               script{
+                   clone("https://github.com/sagnick11tib/DevopsLab","main")
+               }
+            }
+        }
+        stage('Build'){
+            steps{
+                script{
+                    docker_build("devopslab-app","latest","sagnick11")
+                }
+            }
+        }
+        stage('Push to DockerHub'){
+            steps{
+                script{
+                    docker_push("devopslab-app","latest","sagnick11")
+                }
+            }
+        }
+        stage('Deploy'){
+            steps{
+                script{
+                    deploy()
+                }
+               
+            }
+        }
+        
+    }
+}
