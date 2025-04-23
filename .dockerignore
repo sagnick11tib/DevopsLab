@@ -1,0 +1,32 @@
+# Ignore node_modules folder
+node_modules
+
+# Ignore logs
+*.log
+# Ignore Next.js build output
+.next/
+
+# Ignore Next.js cache
+.next/cache/
+# Ignore temporary files
+*.tmp
+
+# Ignore build artifacts
+dist/
+build/
+
+# Ignore Dockerfile and docker-compose override files
+Dockerfile.*
+docker-compose.override.yml
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
