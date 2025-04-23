@@ -67,7 +67,7 @@ export default function Home() {
   return (
     <>
       {/* Animated background elements */}
-      <div ref={containerRef} className="fixed inset-0 pointer-events-none">
+      <div className="fixed inset-0 pointer-events-none">
         <motion.div
           className="absolute inset-0 opacity-30"
           style={{
@@ -98,7 +98,7 @@ export default function Home() {
           />
         ))}
       </div>
-      <div className="space-y-16">
+      <div ref={containerRef} className="space-y-16">
         <nav className="sticky z-50 backdrop-blur-lg border-b border-gray-800 bg-[#0D1425]/80 -mx-4 px-4 py-4 md:-mx-16 md:px-16">
           <div className="flex items-center justify-between">
             <motion.div
