@@ -220,13 +220,13 @@ export default function Home() {
             >
               <pre className="text-sm text-gray-300 overflow-x-auto">
                 <code>{`# Clone the repository
-                  git clone https://github.com/sagnick11tib/DevopsLab
+git clone https://github.com/sagnick11tib/DevopsLab
 
-                  # Build the Docker image
-                  docker build -t devops-lab .
+# Build the Docker image
+docker build -t devops-lab .
 
-                  # Run the container
-                  docker run -p 3000:3000 devops-lab`}</code>
+# Run the container
+docker run -p 3000:3000 devops-lab`}</code>
               </pre>
             </motion.div>
           </div>
