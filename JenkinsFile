@@ -8,7 +8,6 @@ pipeline {
                 script{
                     hello()
                 }
-                echo "Hello World"
             }
         }
         stage('Code'){
